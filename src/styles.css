@@ -1,0 +1,29 @@
+:root{
+    --color-bg: #1A5276;
+    --color-text: #F1C40F;
+}
+*{
+    box-sizing: border-box;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color-bg);
+    border-radius: 3px;
+    outline: none;
+    transition: all .3s;
+}
+.form-input:focus{
+    border-color: var(--color-text);
+    box-shadow: 0 1px 3px #0003 inset;
+    transition: all .3s;
+}
+.form-btn{
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px #0005;
+}

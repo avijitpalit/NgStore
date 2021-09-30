@@ -1,0 +1,14 @@
+<div class="container my-3 d-flex justify-content-center">
+    <div style="width: 300px;" class="my-4">
+        <h3 class="text-center my-3">Register</h3>
+        <p style="color: red; font-weight: 600;">{{ status }}</p>
+        <form #registerForm="ngForm" (ngSubmit)="onRegister(fname.value, lname.value, email.value, password.value, confirm_password.value)">
+            <p><input type="text" placeholder="Enter Firstname" class="form-input" #fname /></p>
+            <p><input type="text" placeholder="Enter Lastname" class="form-input" #lname /></p>
+            <p><input type="email" placeholder="Enter Email" class="form-input" #email /></p>
+            <p><input type="password" placeholder="Set Password" class="form-input" #password /></p>
+            <p><input type="password" placeholder="Confirm Password" class="form-input" #confirm_password /></p>
+            <p style="text-align: right;"><button class="form-btn">Create New Account</button></p>
+        </form>
+    </div>
+</div>
